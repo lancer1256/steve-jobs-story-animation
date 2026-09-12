@@ -1,0 +1,41 @@
+{
+  "name": "steve-jobs-animation",
+  "version": "1.0.0",
+  "description": "A vertical Steve Jobs timeline animation built with Remotion and Three.js",
+  "repository": "https://github.com/lancer1256/steve-jobs-story-animation",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@react-three/drei": "^10.1.2",
+    "@react-three/fiber": "^9.1.2",
+    "@remotion/cli": "4.0.311",
+    "@remotion/skia": "4.0.311",
+    "@remotion/zod-types": "4.0.311",
+    "@remotion/three": "4.0.311",
+    "@shopify/react-native-skia": "2.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.311",
+    "three": "^0.177.0",
+    "zod": "3.22.3"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.311",
+    "@types/dom-webcodecs": "0.1.11",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.3.3",
+    "typescript": "5.8.2"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "render": "remotion render SteveJobsStory demo/steve-jobs-story.mp4",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src",
+    "typecheck": "tsc",
+    "start": "npm run dev"
+  }
+}
