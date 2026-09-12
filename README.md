@@ -1,6 +1,6 @@
 # High-End Programmatic 3D Motion Graphics
 
-**Built: May–June 2025**
+**Built: June 2025**
 
 Used Three.js and GSAP to create 3D motion graphics. Early explorations into if/how you could build something with LLMs that fully replaced a skilled After Effects editor.
 
