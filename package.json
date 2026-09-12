@@ -1,7 +1,7 @@
 {
   "name": "steve-jobs-animation",
   "version": "1.0.0",
-  "description": "Programmatic After Effects-style 3D animation studies built with Remotion and Three.js",
+  "description": "High-end programmatic 3D motion graphics built with Remotion and Three.js",
   "repository": "https://github.com/lancer1256/steve-jobs-story-animation",
   "license": "MIT",
   "private": false,

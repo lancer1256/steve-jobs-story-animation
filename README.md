@@ -1,11 +1,11 @@
-# Programmatic After Effects-Style 3D Animations
+# High-End Programmatic 3D Motion Graphics
 
-A collection of handcrafted, code-driven 3D motion studies built with Remotion, React Three Fiber, Drei, and Three.js. The included Steve Jobs study moves a virtual camera across archival photographs arranged on a textured tabletop, reproducing the kind of spatial composition and camera choreography normally assembled in After Effects.
+Used Three.js and GSAP to create 3D motion graphics. Early explorations into if/how you could build something with LLMs that fully replaced a skilled After Effects editor.
 
 ## Demos
 
 - [`demo/becky-tv-animation.mp4`](demo/becky-tv-animation.mp4) opens on archival footage of Olympic swimmer Becky Dyroen-Lancer playing inside a modeled Panasonic CRT, then moves through a tabletop family-photo story.
-- [`demo/steve-jobs-story.mp4`](demo/steve-jobs-story.mp4) glides across a spatial Steve Jobs photo timeline. Its opening uses an intentional dark fade so WebGL asset initialization never appears as a flash in the exported video.
+- [`demo/steve-jobs-story.mp4`](demo/steve-jobs-story.mp4) glides across a spatial Steve Jobs photo timeline. The exported demo is trimmed past the WebGL initialization frames.
 
 The repository includes the complete Remotion source for the Steve Jobs study. The Becky render is preserved as a companion portfolio artifact; its original prototype depended on third-party model and archival-media assets that are not redistributed here.
 
