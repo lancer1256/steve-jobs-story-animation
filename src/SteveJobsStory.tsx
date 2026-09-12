@@ -154,9 +154,14 @@ export const SteveJobsStoryComposition: React.FC<SteveJobsStoryProps> = ({
   const imageUrls = useMemo(() => [image1, image2, image3, image4, image5], [image1, image2, image3, image4, image5]);
 
   const { width: videoWidth, height: videoHeight } = useVideoConfig();
+  const frame = useCurrentFrame();
+  const openingFadeOpacity = interpolate(frame, [0, 8], [1, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
 
   return (
-    <AbsoluteFill style={{ backgroundColor: 'skyblue' }}> 
+    <AbsoluteFill style={{ backgroundColor: '#160d08' }}>
       <ThreeCanvas
         width={videoWidth}
         height={videoHeight}
@@ -174,6 +179,13 @@ export const SteveJobsStoryComposition: React.FC<SteveJobsStoryProps> = ({
           />
         </Suspense>
       </ThreeCanvas>
+      <AbsoluteFill
+        style={{
+          backgroundColor: '#160d08',
+          opacity: openingFadeOpacity,
+          pointerEvents: 'none',
+        }}
+      />
     </AbsoluteFill>
   );
 }; 
